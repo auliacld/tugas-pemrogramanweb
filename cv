@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Belajar hr dengan atribut align</title>
+</head>
+<body>
+    Aku
+    <hr width="25%" noshade size="20%" align="right">
+    Sayang
+    <hr color="blue" width="50%" size="50%">
+    Kamu
+    <hr color="pink" width="75%" size="90%" noshade align="left">
+</body>
+</html>
