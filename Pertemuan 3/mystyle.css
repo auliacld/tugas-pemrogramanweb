@@ -1,0 +1,56 @@
+/* Style the side navigation */
+.sidenav {
+  height: 150%;
+  width: 240px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #44708a;
+  overflow-x: hidden;
+
+}
+
+.sidenav h4{
+  padding: 3px;
+  margin: 2px;
+  color: white;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 18px;
+}
+.sidenav i{
+  padding: 6px;
+  margin: 10px;
+  color: white;
+  position: absolute;
+
+}
+
+.sidenav p{
+  padding: 15px 15px 0px;
+  margin: 2px 25px 10px;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: 14px;
+   font-family: "Lucida Console", "Courier New", monospace;
+}
+  
+.sidenav img{
+  margin: 70px;
+}
+
+
+/* Style the content */
+#content {
+  margin-left: 200px;
+  padding-left: 5px;
+    position: absolute;
+  
+}
+
+#content p,table{
+   font-family: "Lucida Console", "Courier New", monospace;
+   text-align: justify;
+}
