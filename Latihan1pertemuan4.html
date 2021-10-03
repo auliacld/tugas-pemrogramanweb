@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>latihan 1</title>
+  </head>
+<body>
+	Nilai Pertama <br/>
+		<input type="text" name="nilai" id="nilai1"><br/>
+		Nilai Ke Dua <br/>
+		<input type="text" name="nilai" id="nilai2"><br/><br/>
+		<input type="submit" onclick="jumlah()" value="Tambahkan">
+		<p id="isi"></p>
+		<input type="submit" onclick="kurang()" value="Kurangi">
+		<p id="isi"></p>
+		<input type="submit" onclick="kali()" value="Dikali">
+		<p id="isi"></p>
+		<input type="submit" onclick="bagi()" value="Dibagi">
+		<p id="isi"></p>
+
+
+		<script type="text/javascript">
+		function jumlah(){
+
+			var satu = document.getElementById('nilai1').value; 
+			var dua = document.getElementById('nilai2').value;
+			var total = parseInt(satu) + parseInt(dua);
+			document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+		}
+		
+		function kurang(){
+
+			var satu = document.getElementById('nilai1').value; 
+			var dua = document.getElementById('nilai2').value;
+			var total = parseInt(satu) - parseInt(dua);
+			document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+		}
+
+		function kali(){
+
+			var satu = document.getElementById('nilai1').value; 
+			var dua = document.getElementById('nilai2').value;
+			var total = parseInt(satu) * parseInt(dua);
+			document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+		}
+
+		function bagi(){
+
+			var satu = document.getElementById('nilai1').value; 
+			var dua = document.getElementById('nilai2').value;
+			var total = parseInt(satu) / parseInt(dua);
+			document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+		}
+	</script>
+</html>

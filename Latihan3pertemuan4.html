@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>latihan 1</title>
+  </head>
+<body>
+	<input type="text" name="angka" id="angka"> 
+<button onclick="pengulanganfor()"> Proses</button>
+	<div id="hasil"></div>
+	<script>
+		function pengulanganfor(){
+			var angka = parseInt(document.getElementById("angka").value);
+			var hasil ="";
+			var i=0;
+			var j;
+			while (i<angka){
+				j=0
+					while(j <= i){
+							hasil += "*"
+							j++
+					}
+					hasil += "<br>"
+			i++;
+			}
+			
+				document.getElementById('hasil').innerHTML=hasil
+	}
+</script>
+</html>
