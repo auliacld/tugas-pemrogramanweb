@@ -1,0 +1,35 @@
+<html>
+<body> 
+   <head> 
+       <title> 
+           Latihan Perulangan III
+       </title>
+   </head>
+<script language="JavaScript">
+    var coba = 1;
+    do 
+    {
+        p = prompt("Tuliskan Password dengan Benar","");
+        if (p=="Amikom")
+        {
+            alert("Selamat datang Friends");
+            window.open("Contoh perulangan for.html");
+            break;
+        }
+        else
+        {
+            alert("Password Salah !!!! Ulangi Laagi.");
+        }
+        if (coba==3)
+        {
+            alert ("maaf, kesempatan anda hanya 3 kali");
+            history.go(-1);
+        }
+        coba=coba+1;
+    }
+    while (coba<=3) {  }
+</script>
+<form method="POST">
+    <input type="button" value="Password" onclick="pass()">
+</body>
+</html>
