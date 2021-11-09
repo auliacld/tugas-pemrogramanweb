@@ -33,7 +33,22 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h3 class="register-heading">Tabel Laporan Hasil Penangkapan Ikan</h3>
+                                <h3 class="register-heading">Tabel Laporan Hasil Penangkapan Ikan</h3><br><br><br><br><br><br>
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                    <h4>Tambah Data</h4>
+                        <form action="proses_insert.php" method="POST">
+                            <input type="hidden" name="id_nelayan" value="<?php echo $row['id_nelayan']; ?>">
+                            Nama Depan : <input type="text" name="fname" value=""><br/>
+                            Nama Belakang : <input type="text" name="lname" value=""><br/>
+                            Alamat : <textarea name="alamat" value=""></textarea><br/>
+                            Daerah Penangkapan : <input type="text" name="daerah_penangkapan" value=""><br/>
+                            Jumlah Penangkapan : <input type="text" name="jumlah_tangkapan" value=""><br/>
+                            Alat Penangkapan : <input type="text" name="alat_penangkapan" value=""><br/>
+                            Wilayah WPPNRI : <input type="text" name="wilayah_wppnri" value=""><br/>
+                            <input type="submit" value="simpan">
+                        </form>
+
+                        <br><br>
                                 <table border="1">
         <tr>
             <th>ID</th>
@@ -57,7 +72,6 @@
             echo "<td>".$row['jumlah_tangkapan']."</td>";
             echo "<td>".$row['alat_penangkapan']."</td>";
             echo "<td>".$row['wilayah_wppnri']."</td>";
-            echo "<td><a href='insert.php?id_nelayan=".$row['id_nelayan']."'>Tambah</a></td>";
             echo "<td><a href='edit.php?id_nelayan=".$row['id_nelayan']."'>Edit</a></td>";
             echo "<td><a href='delete.php?id_nelayan=".$row['id_nelayan']."'>Delete</a></td>";
           

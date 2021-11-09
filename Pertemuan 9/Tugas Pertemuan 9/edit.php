@@ -41,13 +41,13 @@
     <h1>Edit Data</h1>
     <form action="proses_edit.php" method="POST">
         <input type="hidden" name="id_nelayan" value="<?php echo $row['id_nelayan']; ?>">
-        Nama Depan : <input type="text" name="namadepan" value="<?php echo $row['fname']; ?>"><br/>
-        Nama Belakang : <input type="text" name="namabelakang" value="<?php echo $row['lname']; ?>"><br/>
+        Nama Depan : <input type="text" name="fname" value="<?php echo $row['fname']; ?>"><br/>
+        Nama Belakang : <input type="text" name="lname" value="<?php echo $row['lname']; ?>"><br/>
         Alamat : <textarea name="alamat"><?php echo $row['alamat']; ?></textarea><br/>
-        Daerah Penangkapan : <input type="text" name="daerah" value="<?php echo $row['daerah_penangkapan']; ?>"><br/>
-        Jumlah Penangkapan : <input type="text" name="jumlah" value="<?php echo $row['jumlah_tangkapan']; ?>"><br/>
-        Alat Penangkapan : <input type="text" name="alat" value="<?php echo $row['alat_penangkapan']; ?>"><br/>
-        Wilayah WPPNRI : <input type="text" name="wilayah" value="<?php echo $row['wilayah_wppnri']; ?>"><br/>
+        Daerah Penangkapan : <input type="text" name="daerah_penangkapan" value="<?php echo $row['daerah_penangkapan']; ?>"><br/>
+        Jumlah Penangkapan : <input type="text" name="jumlah_tangkapan" value="<?php echo $row['jumlah_tangkapan']; ?>"><br/>
+        Alat Penangkapan : <input type="text" name="alat_penangkapan" value="<?php echo $row['alat_penangkapan']; ?>"><br/>
+        Wilayah WPPNRI : <input type="text" name="wilayah_wppnri" value="<?php echo $row['wilayah_wppnri']; ?>"><br/>
         <input type="submit" value="simpan">
     </form>
 </body>

@@ -10,11 +10,11 @@
 
     <?php
         include ("koneksi.php");
-        $id_nelayan = $_GET['id_nelayan'];
+        $id_nelayan = $_POST['id_nelayan'];
 
         $query = "select * from informasi_nelayan where id_nelayan = $id_nelayan";
         $hasil = mysqli_query($koneksi, $query); 
-        $row = mysqli_fetch_assoc($hasil);
+        $row = mysqli_fetch_array($hasil);
     ?>
 
 <div class="container register">
@@ -41,13 +41,13 @@
     <h1>Tambah Data</h1>
     <form action="proses_insert.php" method="POST">
         <input type="hidden" name="id_nelayan" value="<?php echo $row['id_nelayan']; ?>">
-        Nama Depan : <input type="text" name="namadepan" value=""><br/>
-        Nama Belakang : <input type="text" name="namabelakang" value=""><br/>
+        Nama Depan : <input type="text" name="fname" value=""><br/>
+        Nama Belakang : <input type="text" name="lname" value=""><br/>
         Alamat : <textarea name="alamat" value=""></textarea><br/>
-        Daerah Penangkapan : <input type="text" name="daerah" value=""><br/>
-        Jumlah Penangkapan : <input type="text" name="jumlah" value=""><br/>
-        Alat Penangkapan : <input type="text" name="alat" value=""><br/>
-        Wilayah WPPNRI : <input type="text" name="wilayah" value=""><br/>
+        Daerah Penangkapan : <input type="text" name="daerah_penangkapan" value=""><br/>
+        Jumlah Penangkapan : <input type="text" name="jumlah_tangkapan" value=""><br/>
+        Alat Penangkapan : <input type="text" name="alat_penangkapan" value=""><br/>
+        Wilayah WPPNRI : <input type="text" name="wilayah_wppnri" value=""><br/>
         <input type="submit" value="simpan">
     </form>
 </body>
